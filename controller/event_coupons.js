@@ -222,7 +222,7 @@ const utils = {
   appendDataToJson(data) {
     console.log('插入项===>', data)
     fs.appendFile(
-      `../data/${fileName}.json`,
+      `data/${fileName}.json`,
       `${JSON.stringify(data)},\n`,
       () => {}
     )

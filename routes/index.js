@@ -2,7 +2,6 @@ const router = require('koa-router')()
 const controller = require('../controller')
 
 router.post('/v1/crawlData', async (ctx, next) => {
-  console.log(11)
   let params = ctx.request.body
   // 登录cookie
   let cookie = params.cookies
